@@ -1,0 +1,148 @@
+.flexContainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.firstLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3em;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+.firstLine img{
+    display: flex;
+    position: absolute;
+    width: 5em;
+    height: 1.2em;
+    padding-left: 2em;
+    left: 0;
+}
+
+.button{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-self: end;
+    padding-right: 3em;
+}
+
+.button button{
+    position: relative;
+    height: 3em;
+    border: none;
+    width: 10em;
+    border-radius: .5em;
+    font-size: .4em;
+    background-color: #e50914;
+    color: white;
+}
+
+.button input{
+    display: flex;
+    background: none;
+    border-color: white;
+    border-radius: .5em;
+    color: white;
+    font-weight: 500;
+    height: 3em;
+    width: 6em;
+}
+.mainContainer{
+    display: flex;
+    width: 100%;
+    height: 78%;
+    background-image: url("background.jpg");
+    -webkit-box-shadow: inset -4px -1px 100px 100px #000000; 
+    box-shadow: inset -4px -1px 200px 100px #000000;
+    border-bottom: #242424 8px solid;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.3em;
+    flex-direction: column;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    width: 25em;
+    height: 10em;
+    word-break: initial;
+    text-align: center;
+}
+
+.text p{
+    font-weight: 100;
+    font-size: .7em;
+    line-height: 2em;
+}
+
+.text h5{
+    font-size: .55em;
+    font-weight: 100;
+    padding-top: 1em;
+}
+
+.search{
+    display: flex;
+    width: 100%;
+    height:3em;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    position: relative;
+    margin-top: 15em ;
+    width: 16em;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    display: flex;
+    width: 30em;
+    height: 3.5em;
+    border-radius: .2em 0 0 .2em;
+    font-size:.5em ;
+    left: .7em;
+}
+
+.form input::placeholder{
+    color: transparent;
+    left: .7em;
+}
+
+.form label{
+    position: absolute;
+    color: #3d3d3d;
+    left: 0.7em;
+    font-size: 0.5em;
+    transition: transform .15s;
+}
+
+.form input:focus + label , .form input:not(:placeholder-shown) + label{
+    transform:  translateY(-1em);
+    font-size: 0.4em ;
+    transition: transform .15s;
+}
+
+.form button{
+    background-color: #e50914;
+    width: 8em;
+    height: 2.6em;
+    border: none;
+    color: white;
+    font-size: .7em;
+    border-radius: 0 .2em .2em 0;
+}
