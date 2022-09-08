@@ -52,6 +52,17 @@ function Landing() {
           </div>
         </div>
       </div>
+      <div className={style.thirdContainer}>
+        <div className={style.thirdFlex}>
+          <div className={style.image}>
+            <img src="mobile-0819.jpg" />
+          </div>
+          <div className={style.secondText}>
+            <h1>Descarga tus series para verlas offline.</h1>
+            <p>Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
