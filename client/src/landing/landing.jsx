@@ -30,6 +30,28 @@ function Landing() {
           </div>
         </div>
       </div>
+      <div className={style.secondContainer}>
+        <div className={style.secondFlex}>
+          <div className={style.secondText}>
+            <h1>Disfruta en tu TV.</h1>
+            <p>
+              Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV,
+              reproductores de Blu-ray y más.
+            </p>
+          </div>
+          <div className={style.image}>
+            <div className={style.videoDiv}>
+              <video className={style.video} autoPlay playsInline muted loop>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <img src="tv.png" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
