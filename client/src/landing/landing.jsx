@@ -73,6 +73,43 @@ function Landing() {
           </div>
         </div>
       </div>
+      <div className={style.secondContainer}>
+        <div className={style.secondFlex}>
+          <div className={style.secondText}>
+            <h1>Disfruta donde quieras.</h1>
+            <p>
+              Películas y series ilimitadas en tu teléfono, tablet, computadora
+              y TV sin costo adicional.
+            </p>
+          </div>
+          <div className={style.image}>
+            <div className={style.videoDiv2}>
+              <video className={style.video2} autoPlay playsInline muted loop>
+                <source
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <img src="device-pile.png" />
+          </div>
+        </div>
+      </div>
+      <div className={style.secondContainer}>
+        <div className={style.secondFlex}>
+          <div className={style.image}>
+            <img src="kids.png" />
+          </div>
+          <div className={style.secondText}>
+            <h1>Crea perfiles para niños.</h1>
+            <p>
+              Los niños vivirán aventuras con sus personajes favoritos en un
+              espacio diseñado exclusivamente para ellos, sin costo con tu
+              membresía.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -167,7 +167,7 @@
 
 .secondText{
     display: flex;
-    width: 30em;
+    width: 33em;
     flex-direction: column;
     position: relative;
     gap: 2em;
@@ -260,5 +260,14 @@
     width: 3em;
     height: 3em;
     background-size: 3em;
+
+}
+
+.videoDiv2{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    height: 12em;
+    padding-bottom: 7em;
 
 }
