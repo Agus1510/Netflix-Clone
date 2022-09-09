@@ -1,6 +1,10 @@
 import React from "react";
 import style from "./landing.module.css";
-import { IoEarthOutline, IoChevronForwardOutline } from "react-icons/io5";
+import {
+  IoEarthOutline,
+  IoChevronForwardOutline,
+  IoAddOutline,
+} from "react-icons/io5";
 
 function Landing() {
   return (
@@ -121,7 +125,34 @@ function Landing() {
       <div className={style.thirdContainer}>
         <div className={style.thirdFlex}>
           <div className={style.thirdText}>
-            <h1>Preguntas frecuentes.</h1>
+            <h1>Preguntas frecuentes</h1>
+            <IoAddOutline />
+          </div>
+          <div className={style.questions}>
+            <div className={style.question}>
+              <h1>¿Qué es Netflix?</h1>
+              <IoAddOutline />
+            </div>
+            <div className={style.question}>
+              <h1>¿Cuánto cuesta Netflix?</h1>
+              <IoAddOutline />
+            </div>
+            <div className={style.question}>
+              <h1>¿Dónde puedo ver Netflix?</h1>
+              <IoAddOutline />
+            </div>
+            <div className={style.question}>
+              <h1>¿Cómo cancelo?</h1>
+              <IoAddOutline />
+            </div>
+            <div className={style.question}>
+              <h1>¿Qué puedo ver Netflix?</h1>
+              <IoAddOutline />
+            </div>
+            <div className={style.question}>
+              <h1>¿Es bueno Netflix para los niños?</h1>
+              <IoAddOutline />
+            </div>
           </div>
         </div>
       </div>

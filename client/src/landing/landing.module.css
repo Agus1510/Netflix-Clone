@@ -46,18 +46,6 @@
     color: white;
 }
 
-/* .selectDiv{
-    display: flex;
-    background: none;
-    border: 1px solid white;
-    border-radius: .1em;
-    color: white;
-    font-weight: 500;
-    height: 1em;
-    width: 2.7em;
-    justify-content: center;
-
-} */
 
 .select::after{
     content: "\e898"
@@ -318,33 +306,65 @@
 
 
 .thirdContainer{
-    display: flex;
-    flex-direction: row;
-    height: 32em;
+    display:flex;
+    min-height: 55em;
     border-bottom: #242424 8px solid;
     color: white;
+    justify-content: center;
 }
 
 .thirdText{
     display: flex;
-    width: 33em;
+    width: auto;
     height: 4em;
     flex-direction: column;
     position: relative;
     gap: 2em;
     padding-top: 5em;
+
 }
 
 .thirdFlex{
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap:10em;
+    align-items: center;
+    gap:5em;
 }
 
 .thirdText h1{
     font-size:3em; 
     padding-top: 0;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+    height: 35em;
+    gap: .6em;
+
+}
+
+.question{
+    display: flex;
+    flex-direction: row;
+    background-color: #2c2c2c;
+    width: 45em;
+    height: 4em;
+    align-items: center;
+}
+
+.question h1{
+    display: flex;
+    font-size: 1.7em;
+    padding-left: 1em;
+    font-weight: 150;
+}
+
+.question svg{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    margin-left: 38% !important;
 }
