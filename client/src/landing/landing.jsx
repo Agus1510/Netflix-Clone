@@ -52,10 +52,20 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div className={style.thirdContainer}>
-        <div className={style.thirdFlex}>
+      <div className={style.secondContainer}>
+        <div className={style.secondFlex}>
           <div className={style.image}>
             <img src="mobile-0819.jpg" />
+            <div className={style.box}>
+              <div className={style.boxShot}>
+                <img src="boxshot.png" />
+                <div className={style.boxShotText}>
+                  <h1>Stranger Things</h1>
+                  <p>Descargando...</p>
+                </div>
+                <div className={style.boxShotGif}></div>
+              </div>
+            </div>
           </div>
           <div className={style.secondText}>
             <h1>Descarga tus series para verlas offline.</h1>
