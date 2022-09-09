@@ -32,29 +32,66 @@
     align-items: center;
     justify-self: end;
     padding-right: 3em;
+    gap: 1em;
 }
 
 .button button{
     position: relative;
-    height: 3em;
+    height: 2.5em;
     border: none;
     width: 10em;
-    border-radius: .5em;
+    border-radius: .3em;
     font-size: .4em;
     background-color: #e50914;
     color: white;
 }
 
-.button input{
+/* .selectDiv{
     display: flex;
     background: none;
-    border-color: white;
-    border-radius: .5em;
+    border: 1px solid white;
+    border-radius: .1em;
     color: white;
     font-weight: 500;
-    height: 3em;
-    width: 6em;
+    height: 1em;
+    width: 2.7em;
+    justify-content: center;
+
+} */
+
+.select::after{
+    content: "\e898"
 }
+.select{
+    display: flex;
+    background: none;
+    border-radius: .3em;
+    color: white;
+    font-weight: 500;
+    height: 2.8em;
+    width: 5.7em;
+}
+
+.select:focus{
+    outline: none;
+}
+
+.selectDiv svg{
+    color: white;
+    width: .5em;
+    height: .5em;
+    align-self: center;
+}
+
+.selectDiv:focus{
+    outline: 3px solid white;
+}
+.select option{
+    background-color: #6d6d6d;
+    width: 3em;
+}
+
+
 .mainContainer{
     display: flex;
     width: 100%;
@@ -106,7 +143,7 @@
     display: flex;
     position: relative;
     margin-top: 15em ;
-    width: 16em;
+    width: 17em;
     justify-content: center;
     align-items: center;
 }
@@ -144,14 +181,20 @@
 }
 
 .form button{
+    display: flex;
     background-color: #e50914;
-    width: 8em;
+    width: 9em;
     height: 2.6em;
     border: none;
     color: white;
     font-size: .7em;
     border-radius: 0 .2em .2em 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+
 
 .form button:hover{
     background-color: #f9000d;
@@ -173,14 +216,6 @@
     gap: 2em;
 }
 
-.secondText h1{
-    font-size:3em 
-}
-
-.secondText p{
-    font-size:1.7em ;
-}
-
 .secondFlex{
     height: 100%;
     width: 100%;
@@ -190,6 +225,15 @@
     align-items: center;
     gap:10em;
 }
+
+.secondText h1{
+    font-size:3em 
+}
+
+.secondText p{
+    font-size:1.7em ;
+}
+
 
 .image{
     display: flex;
@@ -270,4 +314,37 @@
     height: 12em;
     padding-bottom: 7em;
 
+}
+
+
+.thirdContainer{
+    display: flex;
+    flex-direction: row;
+    height: 32em;
+    border-bottom: #242424 8px solid;
+    color: white;
+}
+
+.thirdText{
+    display: flex;
+    width: 33em;
+    height: 4em;
+    flex-direction: column;
+    position: relative;
+    gap: 2em;
+    padding-top: 5em;
+}
+
+.thirdFlex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10em;
+}
+
+.thirdText h1{
+    font-size:3em; 
+    padding-top: 0;
 }

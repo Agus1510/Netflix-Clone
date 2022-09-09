@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./landing.module.css";
+import { IoEarthOutline, IoChevronForwardOutline } from "react-icons/io5";
 
 function Landing() {
   return (
@@ -8,8 +9,13 @@ function Landing() {
         <div className={style.firstLine}>
           <img src={"logo.png"} />
           <div className={style.button}>
-            <input placeholder="Español"></input>
-            <button> Iniciar sesión</button>
+            <div className={style.selectDiv}>
+              <select name="language" className={style.select}>
+                <option value="spanish">Español</option>
+                <option value="english">Ingles</option>
+              </select>
+            </div>
+            <button>Iniciar sesión</button>
           </div>
         </div>
         <div className={style.container}>
@@ -24,7 +30,9 @@ function Landing() {
               <form className={style.form}>
                 <input type="email" placeholder="Email" />
                 <label for="email">Email</label>
-                <button> Comenzar > </button>
+                <button>
+                  Comenzar <IoChevronForwardOutline />
+                </button>
               </form>
             </div>
           </div>
@@ -107,6 +115,13 @@ function Landing() {
               espacio diseñado exclusivamente para ellos, sin costo con tu
               membresía.
             </p>
+          </div>
+        </div>
+      </div>
+      <div className={style.thirdContainer}>
+        <div className={style.thirdFlex}>
+          <div className={style.thirdText}>
+            <h1>Preguntas frecuentes.</h1>
           </div>
         </div>
       </div>
