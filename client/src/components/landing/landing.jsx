@@ -5,6 +5,7 @@ import {
   IoChevronForwardOutline,
   IoAddOutline,
 } from "react-icons/io5";
+import Footer from "../footer/footer";
 
 function Landing() {
   return (
@@ -155,6 +156,9 @@ function Landing() {
             </div>
           </div>
         </div>
+      </div>
+      <div className={style.footer}>
+        <Footer />
       </div>
     </div>
   );

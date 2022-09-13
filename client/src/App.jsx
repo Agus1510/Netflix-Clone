@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import Landing from "./landing/landing";
+import Landing from "./components/landing/landing";
 
 function App() {
   return (
